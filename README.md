@@ -43,7 +43,7 @@ conda env create -f env_cuda_latest.yaml
 source ~/.bashrc
 
 conda activate pfllib
-### Test Environment
+### Test Environment1
 python -V
 
 python - << 'EOF'
@@ -55,6 +55,16 @@ print("torch:", torch.__version__)
 print("cuda available:", torch.cuda.is_available())
 
 EOF
+
+### Test Environment2
+python - << 'EOF'
+
+import system
+
+print("PFLlib core imported successfully")
+
+EOF
+
 
 
 
