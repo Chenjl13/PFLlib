@@ -14,12 +14,12 @@ This repository is forked from [TsingZ0/PFLlib](https://github.com/TsingZ0/PFLli
 - wsl
 ### Go back to user catalog
 - cd
-### Install miniconda
+### Install miniconda (Run Respectively)
 - wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
 - bash Miniconda3-latest-Linux-x86_64.sh
 - cd /mnt/c/Users/Admin/Desktop/PFllib-master/PFllib-master
 
-### Set Tsinghua Source
+### Set Tsinghua Source (Run Together)
 - mkdir -p ~/.pip 
 - cat > ~/.pip/pip.conf << 'EOF' 
 - [global] 
@@ -27,13 +27,13 @@ This repository is forked from [TsingZ0/PFLlib](https://github.com/TsingZ0/PFLli
 - timeout = 120 
 - EOF
 
-### Config
+### Config (Run Respectively)
 - chmod +x prepare.sh
 - conda env create -f env_cuda_latest.yaml
 - source ~/.bashrc
 - conda activate pfllib
 
-### Test Environment1
+### Test Environment1 (Run Together)
 - python -V
 - python - << 'EOF'
 - import torch
@@ -41,13 +41,13 @@ This repository is forked from [TsingZ0/PFLlib](https://github.com/TsingZ0/PFLli
 - print("cuda available:", torch.cuda.is_available())
 - EOF
 
-### Test Environment2
+### Test Environment2 (Run Together)
 - python - << 'EOF'
 - import system
 - print("PFLlib core imported successfully")
 - EOF
 
-### Run
+### Run (Run Respectively)
 - cd system
 - export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
 - python main.py -data MNIST -m CNN -algo FedAvg -gr 20 -did 0
