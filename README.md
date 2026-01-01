@@ -8,7 +8,6 @@ This repository is forked from [TsingZ0/PFLlib](https://github.com/TsingZ0/PFLli
 - Document environment setup and common pitfalls
 
 ## First Successful Run: FedAvg on MNIST
--Command
 ### Clone down
 git clone https://github.com/TsingZ0/PFLlib
 ### Open Terminal window, move into powershell
