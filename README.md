@@ -35,9 +35,10 @@ timeout = 120
 
 EOF
 
+### config
 chmod +x prepare.sh
 
-bash prepare.sh
+conda env create -f env_cuda_latest.yaml
 
 source ~/.bashrc
 
