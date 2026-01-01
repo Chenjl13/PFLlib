@@ -35,7 +35,7 @@ timeout = 120
 
 EOF
 
-### config
+### Config
 chmod +x prepare.sh
 
 conda env create -f env_cuda_latest.yaml
@@ -43,11 +43,15 @@ conda env create -f env_cuda_latest.yaml
 source ~/.bashrc
 
 conda activate pfllib
-
+### Test Environment
 python - << 'EOF'
+
 import torch
+
 print(torch.__version__)
+
 print(torch.cuda.is_available())
+
 EOF
 
 
