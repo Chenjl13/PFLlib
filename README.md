@@ -15,8 +15,28 @@ wsl
 cd
 ### Install miniconda
 wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+
 bash Miniconda3-latest-Linux-x86_64.sh
 
+
+
+cd /mnt/c/Users/Admin/Desktop/PFllib-master/PFllib-master
+
+mkdir -p ~/.pip cat > ~/.pip/pip.conf << 'EOF' [global] index-url = https://pypi.tuna.tsinghua.edu.cn/simple timeout = 120 EOF
+
+chmod +x prepare.sh
+
+bash prepare.sh
+
+source ~/.bashrc
+
+conda activate pfllib
+
+python - << 'EOF'
+import torch
+print(torch.__version__)
+print(torch.cuda.is_available())
+EOF
 
 
 
