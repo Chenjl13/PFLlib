@@ -44,13 +44,15 @@ source ~/.bashrc
 
 conda activate pfllib
 ### Test Environment
+python -V
+
 python - << 'EOF'
 
 import torch
 
-print(torch.__version__)
+print("torch:", torch.__version__)
 
-print(torch.cuda.is_available())
+print("cuda available:", torch.cuda.is_available())
 
 EOF
 
