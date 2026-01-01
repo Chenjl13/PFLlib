@@ -22,6 +22,7 @@ bash Miniconda3-latest-Linux-x86_64.sh
 
 cd /mnt/c/Users/Admin/Desktop/PFllib-master/PFllib-master
 
+### Set Tsinghua Source
 mkdir -p ~/.pip 
 
 cat > ~/.pip/pip.conf << 'EOF' 
