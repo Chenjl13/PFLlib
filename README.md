@@ -30,7 +30,6 @@ This repository is forked from [TsingZ0/PFLlib](https://github.com/TsingZ0/PFLli
 ### Config (Run Respectively)
 - chmod +x prepare.sh
 - conda env create -f env_cuda_latest.yaml
-- source ~/.bashrc
 - conda activate pfllib
 
 ### Test Environment1 (Run Together)
