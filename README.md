@@ -41,13 +41,13 @@ EOF
 ```
 ### Config
 ```
-- chmod +x prepare.sh
+chmod +x prepare.sh
 ```
 ```
-- conda env create -f env_cuda_latest.yaml
+conda env create -f env_cuda_latest.yaml
 ```
 ```
-- conda activate pfllib
+conda activate pfllib
 ```
 ### Test Environment1
 ```
