@@ -32,11 +32,11 @@ cd /mnt/c/Users/Admin/Desktop/PFllib-master/PFllib-master
 ```
 ### Set Tsinghua Source
 ```
-mkdir -p ~/.pip 
-cat > ~/.pip/pip.conf << 'EOF' 
-[global] 
-index-url = https://pypi.tuna.tsinghua.edu.cn/simple 
-timeout = 120 
+mkdir -p ~/.pip
+cat > ~/.pip/pip.conf <<EOF
+[global]
+index-url = https://pypi.tuna.tsinghua.edu.cn/simple
+timeout = 120
 EOF
 ```
 ### Config
