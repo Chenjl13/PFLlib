@@ -15,9 +15,14 @@ tmux new -s pflib
 ### Begin training
 ```
 cd system
+```
+```
 export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
+```
+```
 python main.py -data MNIST -m CNN -algo FedAvg -gr 20 -did 0
 ```
+
 ### Suspend
 ```
 Ctrl + b
@@ -43,6 +48,7 @@ Kill Session
 ```
 tmux kill-session -t pflib
 ```
+
 
 
 
