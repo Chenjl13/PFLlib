@@ -76,5 +76,5 @@ export LD_LIBRARY_PATH=/usr/lib/wsl/lib:$LD_LIBRARY_PATH
 python main.py -data MNIST -m CNN -algo FedAvg -gr 20 -did 0
 ```
 ### Run With Tmux
-- [Mplayer](./Tmux.md)
+-  click [here](./Tmux.md) to run with Tmux!
 
